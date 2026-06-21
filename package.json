@@ -2,12 +2,15 @@
   "name": "mission-control",
   "private": true,
   "version": "1.0.0",
+  "homepage": "https://watergold12.github.io/mission-control-hq",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

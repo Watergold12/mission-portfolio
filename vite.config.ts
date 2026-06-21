@@ -4,9 +4,17 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 
 export default defineConfig({
+  base: "/mission-control-hq/",
+
   plugins: [react(), tailwindcss()],
+
   resolve: {
-    alias: { "@": path.resolve(__dirname, "./src") },
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
-  server: { port: 5173 },
+
+  server: {
+    port: 5173,
+  },
 });
