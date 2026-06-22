@@ -54,20 +54,8 @@ export function Downloads() {
               </dl>
 
               <div className="flex gap-2">
-                {/* <a href="/resume.pdf" target="_blank" className="flex-1 h-10 rounded-lg border border-border bg-card hover:bg-muted text-sm font-medium transition">
-                  Preview
-                </a>
-                <a href="/resume.pdf" download
-                  className={`flex-1 h-10 rounded-lg text-sm font-medium transition ${
-                    doc.featured
-                      ? "bg-primary text-primary-foreground hover:opacity-90"
-                      : "bg-foreground text-background hover:opacity-90"
-                  }`}
-                >
-                  Download
-                </a> */}
                 <a
-                  href="/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
                   target="_blank"
                   className="flex flex-1 items-center justify-center h-10 rounded-lg border border-border bg-card hover:bg-muted text-sm font-medium transition"
                 >
@@ -75,7 +63,7 @@ export function Downloads() {
                 </a>
 
                 <a
-                  href="/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}resume.pdf`}
                   download
                   className={`flex flex-1 items-center justify-center h-10 rounded-lg text-sm font-medium transition ${
                     doc.featured
