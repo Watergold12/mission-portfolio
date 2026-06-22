@@ -148,28 +148,33 @@ export const MISSIONS = [
 
 export const ARSENAL = [
   {
+    category: "Languages",
+    code: "LA-01",
+    items: ["Python", "Java(Basics)", "C(Intermediate)", "C++(Intermediate)"],
+  },
+  {
     category: "Frontend Arsenal",
-    code: "FE-01",
+    code: "FE-02",
     items: ["React", "JavaScript", "HTML", "CSS", "Tailwind"],
   },
   {
     category: "Backend Arsenal",
-    code: "BE-02",
+    code: "BE-03",
     items: ["Django", "Node.js"],
   },
   {
     category: "Database Systems",
-    code: "DB-03",
+    code: "DB-04",
     items: ["PostgreSQL", "Supabase"],
   },
   {
     category: "Engineering Tools",
-    code: "ET-04",
+    code: "ET-05",
     items: ["Git", "GitHub", "VS Code"],
   },
   {
     category: "Hardware Systems",
-    code: "HW-05",
+    code: "HW-06",
     items: ["Arduino", "ESP32", "Raspberry Pi", "Flight Controllers", "ESC"],
   },
 ] as const;
