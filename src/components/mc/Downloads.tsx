@@ -55,7 +55,7 @@ export function Downloads() {
 
               <div className="flex gap-2">
                 <a
-                  href={`${import.meta.env.BASE_URL}resume.pdf`}
+                  href="/mission-control-hq/resume.pdf"
                   target="_blank"
                   className="flex flex-1 items-center justify-center h-10 rounded-lg border border-border bg-card hover:bg-muted text-sm font-medium transition"
                 >
@@ -63,7 +63,7 @@ export function Downloads() {
                 </a>
 
                 <a
-                  href={`${import.meta.env.BASE_URL}resume.pdf`}
+                  href="/mission-control-hq/resume.pdf"
                   download
                   className={`flex flex-1 items-center justify-center h-10 rounded-lg text-sm font-medium transition ${
                     doc.featured
